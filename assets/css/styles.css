@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: black;
+    background-color:#18181B;
     height: 100vh;
 }
 
@@ -14,12 +14,16 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 48px;
+
+    position: fixed;
+    background-color:#18181B;
+    width: 100%;
 }
 
 #form-habits {
     display: flex;
-    padding: 0 48px;
-    padding-bottom: 48px;
+    padding: 180px 48px 48px;
+    width: fit-content;
 }
 
 .habits {
@@ -27,7 +31,6 @@ header{
     display: flex;
     flex-direction: column;
     gap: 24px;
-
 }
 
 .habit{
@@ -82,6 +85,11 @@ button {
     line-height: 125%;
 }
 
+button:hover {
+    background-color: white;
+    color:#18181B;
+}
+
 input {
     appearance: none;
     -webkit-appearance: none;
@@ -96,4 +104,10 @@ input {
 input:checked {
     background: #8B5CF6;
     border: 2px solid #A78BFA;
+}
+
+@media (max-width: 570px){
+    button div{
+        display: none;        
+    }
 }
